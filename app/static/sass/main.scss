@@ -1,0 +1,26 @@
+/*The global SASS file for this portfolio website
+  containing all the CSS styling information.
+
+  © Ren Davison, 2016*/
+
+/*This imports the mixins, placeholders, and variables from the helper folder*/
+
+@import "helper/mixins";
+@import "helper/placeholders";
+@import "helper/variables";
+
+/*This imports all outside fonts*/
+@import url(https://fonts.googleapis.com/css?family=Assistant:300,400,700);
+
+/*Global classes*/
+
+html, body {
+  margin: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  background: $background-color;
+  font-family: $body-font;
+  color: $text-color;
+  font-size: 14px;
+  font-family: $body-font;
+}
