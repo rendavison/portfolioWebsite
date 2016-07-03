@@ -34,6 +34,15 @@ a {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; }
 
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 13%; }
+
 /*Header*/
 .header {
   margin-top: 80px;
@@ -73,5 +82,18 @@ a {
     color: #555555; }
     .toplinks a:hover {
       color: #ccc; }
+    .toplinks a.current {
+      font-weight: 500; }
+
+/*Footer*/
+.footer {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+  color: #999;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 300; }
 
 /*# sourceMappingURL=main.css.map */

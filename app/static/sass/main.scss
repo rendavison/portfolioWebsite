@@ -37,6 +37,16 @@ a {
   }
 }
 
+h2 {
+  font-family: $header-font;
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 13%;
+}
+
 /*Header*/
 
 .header {
@@ -92,4 +102,17 @@ a {
       font-weight: 500;
     }
   }
+}
+
+/*Footer*/
+
+.footer {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+  color: #999;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 300;
 }
