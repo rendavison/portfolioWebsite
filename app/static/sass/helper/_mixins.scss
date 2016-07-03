@@ -10,3 +10,10 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
 }
+
+@mixin transition-delay($delay) {
+  transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+}

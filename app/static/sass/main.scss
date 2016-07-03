@@ -116,3 +116,30 @@ h2 {
   margin-bottom: 25px;
   font-weight: 300;
 }
+
+/*Information Popups*/
+
+.poptop {
+  @extend %pop;
+  bottom: 247px;
+}
+
+.popbottom {
+  @extend %pop;
+  bottom: -15px;
+}
+
+.popup {
+  height: 250px;
+  postion: relative;
+  overflow: hidden;
+
+  &:hover {
+    .poptop, .popbottom {
+      opacity: 1;
+      height: 45px;
+      padding-top: 15px;
+      @include transition-duration(0.5s);
+    }
+  }
+}
