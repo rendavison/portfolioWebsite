@@ -1,0 +1,64 @@
+<!-- The base HTML file for this portfolio website
+     to operate as a template for all other pages
+     to inherit.
+
+     © Ren Davison, 2016
+
+-->
+
+<html>
+  <head>
+
+    <!--This controls the webpage title-->
+    {% if title %}
+      <title>{{ title }}</title>
+    {% else %}
+      <title>Ren Davison's Portfolio</title>
+    {% endif %}
+
+    <!--This imports the main CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sass/main.css')  }}">
+
+    <!--This imports the icons-->
+    <script src="https://use.fontawesome.com/37df6aa7a8.js"></script>
+  </head>
+
+  <body>
+
+    <!--Header-->
+    
+    <table class="header"><tr>
+      <td><h1>
+        <a href="/">
+          Ren Davison's Portfolio
+        </a>
+      </h1></td>
+      <td>
+        <table align="right"><tr>
+          <td>
+            <a href="mailto:davisonren@gmail.com">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>     
+          </td>
+          <td>
+            <a href="http://design.cmu.edu/people/undergraduate-student/profile-198#profile-main">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </a>  
+          </td>
+        </tr></table>
+      </td>
+    </tr></table>
+
+    <!--Links-->
+
+    <div class="toplinks">
+      <a href="/portfolio.html">work</a>
+      <a href="/web.html">web</a>
+      <a href="/about.html">about</a>
+      <a href="/personal.html">personal</a>
+    </div>
+
+    {% block content %}{% endblock %}
+
+  </body>
+</html>

@@ -11,11 +11,12 @@
 
 /*This imports all outside fonts*/
 @import url(https://fonts.googleapis.com/css?family=Assistant:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700);
 
 /*Global classes*/
 
 html, body {
-  margin: 20px;
+  margin: 0px;
   width: 100%;
   overflow-x: hidden;
   background: $background-color;
@@ -23,4 +24,68 @@ html, body {
   color: $text-color;
   font-size: 14px;
   font-family: $body-font;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+  @include transition-duration(0.5s);
+
+  &:hover {
+    color: $accent-faded;
+    @include transition-duration(0.5s);
+  }
+}
+
+/*Header*/
+
+.header {
+  margin-top: 80px;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  border-bottom: 1px solid $text-color;
+
+  h1 {
+    font-family: $header-font;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 40px;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+
+  i {
+    width: 50px;
+    padding-top: 10px;
+    height: 40px;
+    background: #ededed;
+    @include border-radius(50px);
+    text-align: center;
+    font-size: 30px;
+    color: $text-color;
+  }
+}
+
+.toplinks {
+  text-align: center;
+  word-spacing: 40px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
 }
