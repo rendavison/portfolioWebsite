@@ -24,6 +24,9 @@
 
     <!--This imports the icons-->
     <script src="https://use.fontawesome.com/37df6aa7a8.js"></script>
+
+    <!--This makes the favicon work-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png')  }}">
   </head>
 
   <body>
@@ -55,10 +58,11 @@
     <!--Links-->
 
     <div class="toplinks">
-      <a href="/portfolio.html">work</a>
+      <a href="/portfolio.html">design</a>
       <a href="/web.html">web</a>
       <a href="/about.html">about</a>
       <a href="/personal.html">personal</a>
+      <a href="{{ url_for('static', filename='images/designresume.pdf')  }}">Résumé</a>
     </div>
 
     {% block content %}{% endblock %}

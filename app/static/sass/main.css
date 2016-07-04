@@ -6,26 +6,11 @@
 /*This imports the mixins, placeholders, and variables from the helper folder*/
 /*Colors*/
 /*Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Assistant:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700);
-.poptop, .popbottom {
-  background: #a995bf;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  height: 0px;
-  width: 350px;
-  font-weight: 300;
-  position: absolute;
-  overflow: hidden;
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s; }
-
 /*Colors*/
 /*Fonts*/
 /*This imports all outside fonts*/
+@import url(https://fonts.googleapis.com/css?family=Assistant:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700);
 /*Global classes*/
 html, body {
   margin: 0px;
@@ -59,6 +44,12 @@ h2 {
   font-weight: 400;
   margin-bottom: 5px;
   margin-left: 13%; }
+
+.container {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  background: transparent; }
 
 /*Header*/
 .header {
@@ -114,17 +105,29 @@ h2 {
   font-weight: 300; }
 
 /*Information Popups*/
-.poptop {
-  bottom: 247px; }
-
-.popbottom {
-  bottom: -15px; }
+.pop {
+  background: #a995bf;
+  text-align: center;
+  font-size: 12px;
+  height: 0px;
+  width: 350px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; }
+  .pop a {
+    color: white; }
+    .pop a:hover {
+      color: #ccc; }
 
 .popup {
   height: 250px;
-  postion: relative;
+  position: relative;
   overflow: hidden; }
-  .popup:hover .poptop, .popup:hover .popbottom {
+  .popup:hover .pop {
     opacity: 1;
     height: 45px;
     padding-top: 15px;
