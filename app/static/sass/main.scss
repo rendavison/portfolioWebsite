@@ -134,7 +134,8 @@ h2 {
   width: 350px;
   font-weight: 300;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
+
   @include transition-duration(0.5s);
 
   a {

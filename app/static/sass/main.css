@@ -113,7 +113,7 @@ h2 {
   width: 350px;
   font-weight: 300;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
