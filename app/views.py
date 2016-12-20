@@ -7,6 +7,22 @@ from app import website
 def index():
   return render_template('index.html')
 
+@website.route('/design')
+def design():
+  return render_template('design.html')
+
+@website.route('/web')
+def web():
+  return render_template('web.html')
+
+@website.route('/about')
+def about():
+  return render_template('about.html')
+
+@website.route('/personal')
+def personal():
+  return render_template('personal.html')
+
 #Project subpages
 
 @website.route('/sns')
