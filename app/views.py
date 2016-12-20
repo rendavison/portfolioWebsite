@@ -1,10 +1,34 @@
 from flask import render_template
 from app import website
 
+#Main webpages
+
 @website.route('/')
 def index():
   return render_template('index.html')
 
-@website.route('/featured1.html')
-def featuredOne():
-  return render_template('featured1.html')
+#Project subpages
+
+@website.route('/sns')
+def sns():
+  return render_template('sns.html')
+
+@website.route('/101claras')
+def hundredClaras():
+  return render_template('101claras.html')
+
+@website.route('/ideate')
+def ideate():
+  return render_template('ideate.html')
+
+@website.route('/drueheinz')
+def drueHeinz():
+  return render_template('drueheinz.html')
+
+@website.route('/mosaic')
+def mosaic():
+  return render_template('mosaic.html')
+
+@website.route('/turtle')
+def turtle():
+  return render_template('turtle.html')
