@@ -19,9 +19,9 @@ def web():
 def about():
   return render_template('about.html')
 
-@website.route('/personal')
-def personal():
-  return render_template('personal.html')
+@website.route('/photography')
+def photography():
+  return render_template('photography.html')
 
 #Project subpages
 
