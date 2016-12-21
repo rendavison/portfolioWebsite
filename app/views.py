@@ -48,3 +48,7 @@ def mosaic():
 @website.route('/turtle')
 def turtle():
   return render_template('turtle.html')
+
+@website.route('/cmoa')
+def cmoa():
+  return render_template('cmoa.html')

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h2>
+    Web Design and Development
+  </h2>
+
+  <div style="width: 45%; margin: 0 0 15px 13%;">
+    I have been learning and exploring web design since I was twelve.  My main skill set consists of HTML, CSS, and jQuery, though I also have some JavaScript knowledge.  I also do some freelance web work on the side.  This website's code is entirely my own.  <a href="https://github.com/rendavison/portfolioWebsite" target="_blank">Here is the GitHub repository,</a> for those interested.
+  </div>
+
+  <table align="center" cellpadding="5">
+    <tr>
+      <td class="popup">
+        <a href="/sns">
+          <img width="350px" src="{{ url_for('static', filename='images/home_sns.jpg')  }}">
+          <div class="pop">
+            SCOTCH'N'SODA THEATRE WEBSITE<br /> 
+            HTML, CSS, and jQuery
+          </a>
+        </div>
+      </td>
+      <td class="popup">
+        <a href="/cherry">
+          <img width="350px" src="{{ url_for('static', filename='images/home_cherryblossoms.jpg')  }}">
+          <div class="pop">
+            "CHERRY BLOSSOMS" TUMBLR THEME<br />
+            HTML and CSS
+          </a>
+        </div>
+      </td>
+      <td class="popup">
+        <a href="/bubblegum">
+          <img width="348px" style="border: 1px solid #ddd;" src="{{ url_for('static', filename='images/home_bubblegum.jpg')  }}">
+          <div class="pop">
+            "BUBBLEGUM POP!" TUMBLR THEME<br />
+            HTML and CSS
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="popup">
+        <a href="/pages">
+          <img width="350px" src="{{ url_for('static', filename='images/home_pages.jpg')  }}">
+          <div class="pop">
+            BLOG PAGES AND ADD ONS (COLLECTION)<br />
+            HTML, CSS, and jQuery
+          </a>
+        </div>
+      </td>
+      <td class="popup">
+        <a href="/mosaic">
+          <img width="348px" style="border: 1px solid #ddd" src="{{ url_for('static', filename='images/home_tuts.jpg')  }}">
+          <div class="pop">
+            WEB DEVELOPMENT LEARNING MATERIALS (COLLECTION)<br />
+            HTML and CSS
+          </a>
+        </div>
+      </td>
+      <td style="display: none" class="popup">
+        <a href="/turtle">
+          <img width="350px" src="{{ url_for('static', filename='images/featured6_1.jpg')  }}">
+          <div class="pop">
+            ENDANGERED TURTLE POSTER<br />
+            Adobe Illustrator
+          </a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+{% endblock %}
