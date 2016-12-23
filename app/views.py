@@ -64,3 +64,11 @@ def lamp():
 @website.route('/cardboard')
 def cardboard():
   return render_template('cardboard.html')
+
+@website.route('/cherry')
+def cherryBlossoms():
+  return render_template('cherry.html')
+
+@website.route('/bubblegum')
+def bubblegumPop():
+  return render_template('bubblegum.html')
