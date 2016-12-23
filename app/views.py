@@ -52,3 +52,15 @@ def turtle():
 @website.route('/cmoa')
 def cmoa():
   return render_template('cmoa.html')
+
+@website.route('/helvetica')
+def helvetica():
+  return render_template('helvetica.html')
+
+@website.route('/lamp')
+def lamp():
+  return render_template('lamp.html')
+
+@website.route('/cardboard')
+def cardboard():
+  return render_template('cardboard.html')

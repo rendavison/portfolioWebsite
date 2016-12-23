@@ -138,4 +138,10 @@ h2 {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; }
 
+/*Other page-specific classes*/
+.about {
+  width: 60%;
+  margin-left: 20%;
+  background: transparent; }
+
 /*# sourceMappingURL=main.css.map */
