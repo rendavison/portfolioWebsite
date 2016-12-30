@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <table class="container" cellspacing="20"><tr>
+    <td valign="top">
+      <img src="{{ url_for('static',filename='images/compliment_1.jpg')  }}" width="640px" style="margin-bottom: 10px;"> 
+      <img src="{{ url_for('static',filename='images/compliment_2.jpg')  }}" width="640px" style="margin-bottom: 10px;">
+      <img src="{{ url_for('static',filename='images/compliment_3.jpg')  }}" width="640px" style="margin-bottom: 10px;">
+      <img src="{{ url_for('static',filename='images/compliment_4.jpg')  }}" width="640px" style="margin-bottom: 10px;">
+      <img src="{{ url_for('static',filename='images/compliment_5.jpg')  }}" width="640px" style="margin-bottom: 10px;">
+      <p />
+    </td>
+    <td valign="top">
+      <b>Complimentary Color Study</b>
+      <p />
+      As a final project for a semester-long class on color and communication, we were given the prompt of placing people in environments where they would recede, pop out, attatch, or detach from their surroundings.  To play up the color aspect of this project, I intentionally placed my models in enviornments where their clothing, hair, and environment would come together to form a complimentary color dyad. 
+      <p />
+      After taking hundreds of photos, I then selected some of the best shots and amplified and edited the colors in photoshop.  Additionally, cropping the photos into strips served to depersonalize the models and bring the attention more to the color interaction in the photos.  These photos were also inkjet printed for the final presentation.
+    </td>
+  </tr> </table>
+
+{% endblock %}

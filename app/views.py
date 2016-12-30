@@ -41,14 +41,6 @@ def ideate():
 def drueHeinz():
   return render_template('drueheinz.html')
 
-@website.route('/mosaic')
-def mosaic():
-  return render_template('mosaic.html')
-
-@website.route('/turtle')
-def turtle():
-  return render_template('turtle.html')
-
 @website.route('/cmoa')
 def cmoa():
   return render_template('cmoa.html')
@@ -57,13 +49,13 @@ def cmoa():
 def helvetica():
   return render_template('helvetica.html')
 
-@website.route('/lamp')
-def lamp():
-  return render_template('lamp.html')
+@website.route('/rzd')
+def rzd():
+  return render_template('rzd.html')
 
-@website.route('/cardboard')
-def cardboard():
-  return render_template('cardboard.html')
+@website.route('/compliment')
+def compliment():
+  return render_template('compliment.html')
 
 @website.route('/cherry')
 def cherryBlossoms():
