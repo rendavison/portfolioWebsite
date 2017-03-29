@@ -64,3 +64,7 @@ def cherryBlossoms():
 @website.route('/bubblegum')
 def bubblegumPop():
   return render_template('bubblegum.html')
+
+@website.route('/hayakawa')
+def hayakawa():
+  return render_template('hayakawa.html')
