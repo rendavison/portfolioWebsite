@@ -1,5 +1,4 @@
-#Ren Davison's Design Portfolio Website
+Remy Davison's Design Portfolio Website
 
-Currently in development by Ren Davison.
+In constant development by Remy Davison as a place to put all of my design and related work.
 
-I need a place to put all of my design work somewhere.
