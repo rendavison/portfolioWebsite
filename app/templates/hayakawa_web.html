@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <table class="container" cellspacing="20"><tr>
+    <td valign="top">
+      <img src="{{ url_for('static',filename='images/hayakawa_web_1.jpg')  }}" width="640px" style="margin-bottom: 10px; border: 1px solid #ddd;">
+      <img src="{{ url_for('static',filename='images/hayakawa_web_2.jpg')  }}" width="640px" style="margin-bottom: 10px; border: 1px solid #ddd;">
+      <p />
+      <h3 align="center">
+          Live preview under construction / <a href="https://github.com/rendavison/yoshioHayakawa" target="_blank">Click for full code</a>
+      </h3>
+    </td>
+    <td valign="top">
+      <b>Hayakawa Book: Web Component</b>
+      <p />
+      This is the web component to compliment my <a href="/hayakawa">book project of Japanese design Yoshio Hayakawa.</a> This component was an exercise in transfering information from a printed format to a digital format in a responsive and accessible way.
+    </td>
+  </tr> </table>
+
+{% endblock %}

@@ -21,7 +21,7 @@ def about():
 
 @website.route('/photography')
 def photography():
-  return render_template('photography.html')
+  return render_template('photo_slider.html')
 
 #Project subpages
 
@@ -68,3 +68,15 @@ def bubblegumPop():
 @website.route('/hayakawa')
 def hayakawa():
   return render_template('hayakawa.html')
+
+@website.route('/hayakawa-web')
+def hayakawaWeb():
+  return render_template('hayakawa_web.html')
+
+@website.route('/hayakawa-preview')
+def hayakawaPreview():
+  return render_template('hayakawa_web/index.html')
+
+@website.route('/pgh-web')
+def pghWeb():
+  return render_template('pgh_web.html')

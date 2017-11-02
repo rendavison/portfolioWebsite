@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h2>
+    Photography
+  </h2>
+
+  <div style="width: 45%; margin: 0 0 15px 13%;">
+    Photography is a relatively new passion of mine that I've become quite invested in.  I regularly go out and shoot both environments and people, going back and forth between natural and urban scenes and portraits.  I edit all of my raw image files in Photoshop.
+  </div>
+
+  <div class="slideshow">
+    <div><img src="{{ url_for('static', filename='images/photo_31.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/photo_30.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/photo_29.jpg') }}"></div>
+  </div>
+  
+  <!--Slick Slideshow JS-->
+  <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+
+{% endblock %}
