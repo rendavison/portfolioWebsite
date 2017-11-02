@@ -80,3 +80,7 @@ def hayakawaPreview():
 @website.route('/pgh-web')
 def pghWeb():
   return render_template('pgh_web.html')
+
+@website.route('/404')
+def uc():
+  return render_template('uc.html')
