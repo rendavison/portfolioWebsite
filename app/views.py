@@ -84,3 +84,7 @@ def pghWeb():
 @website.route('/404')
 def uc():
   return render_template('uc.html')
+
+@website.route('/mbmbam')
+def mbmbam():
+  return render_template('mbmbam.html')
