@@ -21,7 +21,7 @@ def about():
 
 @website.route('/photography')
 def photography():
-  return render_template('photo_slider.html')
+  return render_template('photos.html')
 
 #Project subpages
 
