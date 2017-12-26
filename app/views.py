@@ -88,3 +88,7 @@ def uc():
 @website.route('/mbmbam')
 def mbmbam():
   return render_template('mbmbam.html')
+
+@website.route('/talktome')
+def ttm():
+  return render_template('ttm.html')

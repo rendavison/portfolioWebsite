@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <table class="container" cellspacing="20"><tr>
+    <td valign="top">
+      <img src="{{ url_for('static',filename='images/hayakawa_1.jpg')  }}" width="640px" style="margin-bottom: 10px; border: 1px solid #ddd;"> 
+      <img src="{{ url_for('static',filename='images/hayakawa_2.jpg')  }}" width="640px" style="margin-bottom: 10px; border: 1px solid #ddd;">
+      <img src="{{ url_for('static',filename='images/hayakawa_3.jpg')  }}" width="640px" style="margin-bottom: 10px; border: 1px solid #ddd;">
+      <p />
+    </td>
+    <td valign="top">
+      <b>Book Spreads on Japanese Designer Yoshio Hayakawa</b>
+      <p />
+      For a half semester project for one of my communication design studios, we were given a list of East Asian designers and told to pick one who we'd eventually design three spreads on for one printed book for the whole class.  I chose Yoshio Hayakawa, a Japanese graphic designer and illustrator.  To the left are the final spreads with the grids overlayed.  To see the full spreads without the grids and at a higher resolution, click <a href="{{ url_for('static',filename='images/hayakawa_final.pdf')  }}" target="_blank">here.</a>  To see full process documentation with images, click <a href="https://medium.com/@davisonren/project-1-592185bcd0f5" target="_blank">here.</a>
+      <p />
+      This project was a good way to really explore grid systems.  We used very structured column grids of our design to create these spreads, and then broke them where necessary.  The project also served as a good way to integrate text, image, and graphic elements into one cohesive system.  I focused on everything from font choice, to image placement, to line height and the rag of the paragraphs, to make sure that the finished product was successful both communicationally and aesthetically.
+      <p />
+      This project has an additional web component, which can be found <a href="/hayakawa-web">here.</a>
+    </td>
+  </tr> </table>
+
+{% endblock %}
